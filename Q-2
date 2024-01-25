@@ -1,0 +1,5 @@
+planet = "Earth"
+diameter = 12742
+#.format() method to insert the values of the variables into the string. 
+output_string = "The diameter of {} is {} kilometers.".format(planet, diameter)
+print(output_string)

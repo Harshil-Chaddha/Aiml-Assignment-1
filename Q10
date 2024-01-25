@@ -1,0 +1,7 @@
+list1 = ["M", "na", "i", "She"]
+list2 = ["y", "me", "s", "lly"]
+
+# we can Concatenate two lists index-wise
+result = [elem1 + elem2 for elem1, elem2 in zip(list1, list2)]
+#zip() function used to iterate over the elements of list1 and list2 together.
+print(result)

@@ -1,0 +1,10 @@
+def sum_of_series(n):
+    a = 2
+    r = 10
+    Sn = a * ((r ** n) - 1) / (r - 1)
+    return Sn
+
+# Example: Find the sum of the series up to 5 terms
+n_terms = 5
+result = sum_of_series(n_terms)
+print(f"The sum of the series up to {n_terms} terms is: {result}")

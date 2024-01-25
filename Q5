@@ -1,0 +1,23 @@
+def extract_domain(email):
+    """
+    Extracts the domain from an email address.
+
+    Parameters:
+    - email (str): Email address in the form user@domain.com.
+
+    Returns:
+    - str: The extracted domain.
+    """
+    # Split the email address at '@' to separate the username and domain
+    parts = email.split('@')
+
+    # Check if the email has the correct format
+    if len(parts) == 2:
+        return parts[1]  # Return the domain part
+    else:
+        return "Invalid email format"
+
+# Example usage
+email_address = "user@example.com"
+domain = extract_domain(email_address)
+print("The domain is:", domain)

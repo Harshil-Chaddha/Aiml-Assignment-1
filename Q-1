@@ -1,0 +1,4 @@
+s = "Hi there Class!"
+word_list = s.split()
+#split() method splits the string at whitespace characters
+print(word_list)

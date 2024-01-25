@@ -1,0 +1,7 @@
+d1 = {'a': 100, 'b': 200, 'c': 300}
+
+# Check if the value 200 exists in the dictionary
+if 200 in d1.values():
+    print("Value 200 exists in the dictionary.")
+else:
+    print("Value 200 does not exist in the dictionary.")

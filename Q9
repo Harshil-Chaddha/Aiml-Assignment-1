@@ -1,0 +1,29 @@
+def caught_speeding(speed, is_birthday):
+    """
+    Determines the result of a speeding incident based on speed and birthday status.
+
+    Parameters:
+    - speed (int): The speed of the driver.
+    - is_birthday (bool): True if it's the driver's birthday, False otherwise.
+
+    Returns:
+    - str: The result of the speeding incident ("No Challan", "Small Challan", or "Heavy Challan").
+    """
+    # Adjust speed limit if it's the driver's birthday
+    if is_birthday:
+        speed -= 5
+
+    # Check the speed and return the corresponding result
+    if speed <= 60:
+        return "No Challan"
+    elif 61 <= speed <= 80:
+        return "Small Challan"
+    else:
+        return "Heavy Challan"
+
+# Example usage
+result1 = caught_speeding(81, True)
+result2 = caught_speeding(81, False)
+
+print("Result on birthday:", result1)  # Output: "Small Challan"
+print("Result without birthday:", result2)  # Output: "Heavy Challan"

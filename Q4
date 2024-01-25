@@ -1,0 +1,13 @@
+d = {'k1': [1, 2, 3, {'tricky': ['oh', 'man', 'inception', {'target': [1, 2, 3, 'hello']}]}]}
+
+# Accessing "hello" using keys
+hello_word = d['k1'][3]['tricky'][3]['target'][3]
+
+# Printing the result
+print(hello_word)
+#we can use mutiple keys to navigate through the nested through the nested structure to accessthe word "hello" in the given nested dictionary.
+
+
+
+
+

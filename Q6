@@ -1,0 +1,17 @@
+def contains_dog(input_string):
+    """
+    Checks if the word 'dog' is contained in the input string.
+
+    Parameters:
+    - input_string (str): The input string to check.
+
+    Returns:
+    - bool: True if 'dog' is contained, False otherwise.
+    """
+    return 'dog' in input_string.lower()
+
+# Example usage
+text = "I have a dog at outside my home."
+result = contains_dog(text)
+
+print(result)  # Output: True

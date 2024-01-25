@@ -1,0 +1,23 @@
+def count_dog_occurrences(input_string):
+    """
+    Counts the number of times the word 'dog' occurs in the input string.
+
+    Parameters:
+    - input_string (str): The input string to count occurrences in.
+
+    Returns:
+    - int: The number of times 'dog' occurs in the input string.
+    """
+    # Convert the input string to lowercase for case-insensitive matching
+    lowercased_string = input_string.lower()
+
+    # Count occurrences of the word 'dog'
+    count = lowercased_string.count('dog')
+
+    return count
+
+# Example usage
+text = "I have a dog. My friend also has a dog. Dogs are great.Some dogs are really looking dangerous!"
+occurrences = count_dog_occurrences(text)
+
+print("Number of occurrences of 'dog':", occurrences)  # Output: 3
